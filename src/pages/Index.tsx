@@ -29,24 +29,28 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 pt-16">
-        <div className="container px-4 py-16 text-center">
-          <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 animate-fade-in">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#fdfcfb] to-[#e2d1c3] pt-16 bg-blend-overlay bg-opacity-90" style={{
+        backgroundImage: 'url("https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=2000")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
+        <div className="container px-4 py-16 text-center backdrop-blur-sm bg-white/30 rounded-lg">
+          <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 animate-fade-in text-gray-800">
             Premium Grooming<br />For The Modern Gentleman
           </h1>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in">
             Experience exceptional service at Los Angeles' finest barbershop
           </p>
-          <Button className="bg-black text-white hover:bg-gold animate-fade-in">
+          <Button className="bg-gold hover:bg-gold/90 text-white animate-fade-in">
             Book Your Appointment
           </Button>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-gradient-to-br from-white to-[#fef9d7]">
         <div className="container px-4">
-          <h2 className="text-3xl font-playfair font-bold text-center mb-12">Our Services</h2>
+          <h2 className="text-3xl font-playfair font-bold text-center mb-12 text-gray-800">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service) => (
               <ServiceCard key={service.name} {...service} />
@@ -56,14 +60,14 @@ const Index = () => {
       </section>
 
       {/* Hours & Location Section */}
-      <section id="hours" className="py-20 bg-gray-50">
+      <section id="hours" className="py-20 bg-gradient-to-b from-[#e6e9f0] to-[#eef1f5]">
         <div className="container px-4">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <HoursCard />
             
             <div id="location" className="space-y-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-playfair text-xl font-bold mb-4 flex items-center gap-2">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/20">
+                <h3 className="font-playfair text-xl font-bold mb-4 flex items-center gap-2 text-gray-800">
                   <MapPin className="h-5 w-5" />
                   Location
                 </h3>
@@ -74,8 +78,8 @@ const Index = () => {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-playfair text-xl font-bold mb-4 flex items-center gap-2">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/20">
+                <h3 className="font-playfair text-xl font-bold mb-4 flex items-center gap-2 text-gray-800">
                   <Phone className="h-5 w-5" />
                   Contact
                 </h3>
@@ -95,7 +99,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8">
+      <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-8">
         <div className="container px-4 text-center">
           <p className="font-playfair text-xl mb-4">Luxe Cuts Barbershop</p>
           <p className="text-gray-400 text-sm">

@@ -9,11 +9,11 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ name, price, description }: ServiceCardProps) => {
   return (
-    <Card className="hover:border-gold transition-colors">
+    <Card className="hover:border-gold transition-colors backdrop-blur-sm bg-white/80 border-white/20">
       <CardHeader>
         <CardTitle className="flex justify-between items-center">
-          <span className="font-playfair">{name}</span>
-          <span className="text-gold">{price}</span>
+          <span className="font-playfair text-gray-800">{name}</span>
+          <span className="text-gold font-semibold">{price}</span>
         </CardTitle>
       </CardHeader>
       <CardContent>

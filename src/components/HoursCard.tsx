@@ -10,9 +10,9 @@ const hours = [
 
 const HoursCard = () => {
   return (
-    <Card>
+    <Card className="backdrop-blur-sm bg-white/80 border-white/20">
       <CardHeader>
-        <CardTitle className="font-playfair flex items-center gap-2">
+        <CardTitle className="font-playfair flex items-center gap-2 text-gray-800">
           <Clock className="h-5 w-5" />
           Hours of Operation
         </CardTitle>
@@ -21,7 +21,7 @@ const HoursCard = () => {
         <div className="space-y-2">
           {hours.map((schedule) => (
             <div key={schedule.day} className="flex justify-between">
-              <span className="font-medium">{schedule.day}</span>
+              <span className="font-medium text-gray-700">{schedule.day}</span>
               <span className="text-gray-600">{schedule.time}</span>
             </div>
           ))}
