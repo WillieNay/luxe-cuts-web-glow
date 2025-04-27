@@ -52,34 +52,13 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-20 bg-gradient-to-br from-white to-[#fef9d7]">
         <div className="container px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-4">
-              <img 
-                src="/lovable-uploads/68c98335-353c-4dc4-9a26-97364bc18dbe.png" 
-                alt="Vintage barbershop scene"
-                className="rounded-lg w-full max-w-md mx-auto shadow-lg"
-              />
-              <img 
-                src="/lovable-uploads/8950314a-e77a-43dd-b4f1-3d8f0816cff8.png" 
-                alt="Classic barbershop scene"
-                className="rounded-lg w-full max-w-md mx-auto shadow-lg"
-              />
+          <div className="mb-16">
+            <h2 className="text-3xl font-playfair font-bold mb-6 text-gray-800 text-center">Our Services</h2>
+            <div className="grid gap-6 max-w-2xl mx-auto">
+              {services.map((service) => (
+                <ServiceCard key={service.name} {...service} />
+              ))}
             </div>
-            <div>
-              <h2 className="text-3xl font-playfair font-bold mb-6 text-gray-800">Our Services</h2>
-              <div className="grid gap-6">
-                {services.map((service) => (
-                  <ServiceCard key={service.name} {...service} />
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="text-center">
-            <img 
-              src="/lovable-uploads/2cc6e845-eba0-48b6-b180-4fa6a0f408e3.png" 
-              alt="Barber pole"
-              className="w-24 h-auto mx-auto mb-8"
-            />
           </div>
         </div>
       </section>
