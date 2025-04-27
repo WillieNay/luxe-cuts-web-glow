@@ -1,3 +1,4 @@
+
 import Navbar from '@/components/Navbar';
 import ServiceCard from '@/components/ServiceCard';
 import HoursCard from '@/components/HoursCard';
@@ -50,10 +51,10 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gradient-to-br from-white to-[#fef9d7]">
+      <section id="services" className="py-20 bg-gradient-to-br from-[#403E43] to-[#221F26]">
         <div className="container px-4">
           <div className="mb-16">
-            <h2 className="text-3xl font-playfair font-bold mb-6 text-gray-800 text-center">Our Services</h2>
+            <h2 className="text-3xl font-playfair font-bold mb-6 text-white/90 text-center">Our Services</h2>
             <div className="grid gap-6 max-w-2xl mx-auto">
               {services.map((service) => (
                 <ServiceCard key={service.name} {...service} />
