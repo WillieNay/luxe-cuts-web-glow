@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Luxe Cut Demo Website
 
 ## Project info
 
