@@ -28,9 +28,6 @@ const Navbar = () => {
             <a href="#services" className="hover:text-gold transition-colors">Services</a>
             <a href="#hours" className="hover:text-gold transition-colors">Hours</a>
             <a href="#location" className="hover:text-gold transition-colors">Location</a>
-            <Button className="bg-black text-white hover:bg-gold">
-              Book Now
-            </Button>
           </div>
         </div>
 
@@ -40,9 +37,6 @@ const Navbar = () => {
               <a href="#services" className="hover:text-gold transition-colors">Services</a>
               <a href="#hours" className="hover:text-gold transition-colors">Hours</a>
               <a href="#location" className="hover:text-gold transition-colors">Location</a>
-              <Button className="bg-black text-white hover:bg-gold w-full">
-                Book Now
-              </Button>
             </div>
           </div>
         )}

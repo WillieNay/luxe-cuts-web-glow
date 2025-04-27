@@ -44,9 +44,6 @@ const Index = () => {
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in">
             Experience exceptional service at Los Angeles' finest barbershop
           </p>
-          <Button className="bg-gold hover:bg-gold/90 text-white animate-fade-in">
-            Book Your Appointment
-          </Button>
         </div>
       </section>
 
