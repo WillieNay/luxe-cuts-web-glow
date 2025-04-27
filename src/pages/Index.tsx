@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import ServiceCard from '@/components/ServiceCard';
 import HoursCard from '@/components/HoursCard';
@@ -29,12 +28,15 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#fdfcfb] to-[#e2d1c3] pt-16 bg-blend-overlay bg-opacity-90" style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=2000")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}>
-        <div className="container px-4 py-16 text-center backdrop-blur-sm bg-white/30 rounded-lg">
+      <section className="min-h-screen relative flex items-center justify-center bg-gradient-to-b from-[#fdfcfb] to-[#e2d1c3] pt-16">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/95db415a-349b-4a25-91fa-262fb8df0e9d.png" 
+            alt="Barber tools"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="container relative z-10 px-4 py-16 text-center backdrop-blur-sm bg-white/30 rounded-lg">
           <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 animate-fade-in text-gray-800">
             Premium Grooming<br />For The Modern Gentleman
           </h1>
@@ -50,11 +52,34 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-20 bg-gradient-to-br from-white to-[#fef9d7]">
         <div className="container px-4">
-          <h2 className="text-3xl font-playfair font-bold text-center mb-12 text-gray-800">Our Services</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <ServiceCard key={service.name} {...service} />
-            ))}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-4">
+              <img 
+                src="/lovable-uploads/68c98335-353c-4dc4-9a26-97364bc18dbe.png" 
+                alt="Vintage barbershop scene"
+                className="rounded-lg w-full max-w-md mx-auto shadow-lg"
+              />
+              <img 
+                src="/lovable-uploads/8950314a-e77a-43dd-b4f1-3d8f0816cff8.png" 
+                alt="Classic barbershop scene"
+                className="rounded-lg w-full max-w-md mx-auto shadow-lg"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-playfair font-bold mb-6 text-gray-800">Our Services</h2>
+              <div className="grid gap-6">
+                {services.map((service) => (
+                  <ServiceCard key={service.name} {...service} />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="text-center">
+            <img 
+              src="/lovable-uploads/2cc6e845-eba0-48b6-b180-4fa6a0f408e3.png" 
+              alt="Barber pole"
+              className="w-24 h-auto mx-auto mb-8"
+            />
           </div>
         </div>
       </section>

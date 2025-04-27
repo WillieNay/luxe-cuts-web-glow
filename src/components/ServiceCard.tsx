@@ -9,7 +9,7 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ name, price, description }: ServiceCardProps) => {
   return (
-    <Card className="hover:border-gold transition-colors backdrop-blur-sm bg-white/80 border-white/20">
+    <Card className="hover:border-gold transition-colors backdrop-blur-sm bg-white/90 border-white/20 transform hover:-translate-y-1 duration-200">
       <CardHeader>
         <CardTitle className="flex justify-between items-center">
           <span className="font-playfair text-gray-800">{name}</span>
