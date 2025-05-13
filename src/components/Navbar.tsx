@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#" className="text-xl font-playfair font-bold">
-            Luxe Cuts
+            Luxe Cut
           </a>
           
           <div className="md:hidden">

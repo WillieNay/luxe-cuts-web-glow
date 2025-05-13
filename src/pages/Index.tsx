@@ -103,9 +103,9 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-8">
         <div className="container px-4 text-center">
-          <p className="font-playfair text-xl mb-4">Luxe Cuts Barbershop</p>
+          <p className="font-playfair text-xl mb-4">Luxe Cut Barbershop</p>
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Luxe Cuts. All rights reserved.
+            © {new Date().getFullYear()} Luxe Cut. All rights reserved.
           </p>
         </div>
       </footer>
